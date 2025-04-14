@@ -1,7 +1,7 @@
 
 import axios from 'axios';
 
-const API_URL ='http://localhost:5000/api';
+const API_URL ='https://cricket-chat-room-server.onrender.com/api';
 
 
 const api = axios.create({

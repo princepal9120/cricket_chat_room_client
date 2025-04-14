@@ -86,10 +86,10 @@ export const SocketProvider: React.FC<{ children: React.ReactNode }> = ({ childr
 
   useEffect(() => {
     if (authState.isAuthenticated && authState.user?.interest) {
-      const SOCKET_URL = import.meta.env.VITE_SOCKET_URL || 'http://localhost:5000';
+      const SOCKET_URL = 'https://cricket-chat-room-server.onrender.com';
       const socket = io(SOCKET_URL, {
         auth: {
-          token: localStorage.getItem('token'),
+          token: localStorage.getItem('token')
         },
       });
 
